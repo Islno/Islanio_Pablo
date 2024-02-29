@@ -10,8 +10,8 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 15%;
+    height: auto; /* Altera a altura para automática */
+    min-height: 50px; /* Altura mínima para garantir visibilidade */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,5 +53,6 @@ a {
     height: 60px; 
     width: auto; 
     margin-right: 50px;
+    margin-top: 2px;
     border: 1px solid black;
 }
