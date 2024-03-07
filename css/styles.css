@@ -141,3 +141,12 @@ body {
             padding: 10px; 
             text-decoration: none;
         }
+        hr {
+            border: none;
+            border-top: 1px solid black; /* Cor e estilo da linha */
+            margin: 20px 0; /* Espaçamento ao redor da linha */
+        }
+        #imagem-Atividade2{
+            height: 200px;
+            width: 200px;
+        }
