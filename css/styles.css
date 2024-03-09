@@ -181,8 +181,8 @@ body {
             border-radius: 5px;
             padding: 20px;
             margin-bottom: 20px;
-            width: 400px;
-            height: 100px;
+            width: 300px;
+            height: auto;
 
         }
         
@@ -196,6 +196,7 @@ body {
         .activity-description {
             color: #5a5a5a;
             margin-bottom: 10px;
+            height: auto;
         }
         
         .activity-button {
