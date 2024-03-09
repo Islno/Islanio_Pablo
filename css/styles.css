@@ -94,7 +94,7 @@ body {
             width: auto; 
             margin-right: 50px;
             margin-top: 2px;
-            border: 1px solid black;
+            border: 1px solid rgb(92, 31, 76);
         }
 
         .conteudo {
@@ -130,7 +130,7 @@ body {
       
         .conteudo a:hover,
         .conteudo a:focus {
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+            box-shadow: 0 0 5px rgba(252, 251, 251, 0.3), 0.3; 
         }
         .atividade {
             border-top: 1px solid rgb(216, 147, 243); 
@@ -145,7 +145,7 @@ body {
         }
         hr {
             border: none;
-            border-top: 1px solid black; /* Cor e estilo da linha */
+            border-top: 1px solid rgb(255, 255, 255); /* Cor e estilo da linha */
             margin: 20px 0; /* Espaçamento ao redor da linha */
         }
         #imagem-Atividade2{
@@ -159,9 +159,15 @@ body {
             margin-right: 5px;
         }
         
-        th, td {
+        th {
             border: 2px solid rgb(241, 241, 241);
             padding: 8px;
+            background-color:rgb(75, 75, 75);
+        } 
+        td {
+            border: 2px solid rgb(241, 241, 241);
+            padding: 8px;
+            background-color:transparent;
         }
         .exodia{
             height: 20  0px;
@@ -191,7 +197,7 @@ body {
             margin-top: auto;
             font-size: 20px;
             margin-bottom: 5px;
-            color: black;
+            color: rgb(0, 0, 0);
         }
         
         .activity-description {
@@ -212,3 +218,20 @@ body {
             transition: background-color 0.3s;
 
         }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            align-items:first baseline;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: #f9f9f9;
+            border: 2px solid #ddddddd5;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 300px;
+            height: auto;
+            color: black;
+        }
+      
+        
