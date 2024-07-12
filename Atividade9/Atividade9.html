@@ -4,20 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 3</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .menu {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+        .left, .right {
+            background-color: #f4f4f4;
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .center {
+            background-color: #e4e4e4;
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
 </head>
-<body>
-    <span>Container body</span>
-    <div id="conteudo-atividade-9">
-        Conteiner div
-        <div id="relativo" class="caixa">
-            Relativo
+    <body>
+        <div class="header">
+            <h1>Header</h1>
         </div>
-        <div id="absoluto" class="caixa">
-            Absoluto
+        <div class="menu">
+            <p>Menu</p>
         </div>
-        <div id="fixo" class="caixa">
-            Fixo
+        <div class="main">
+            <div class="left">
+                <h2>Left</h2>
+                <p>Conteúdo da esquerda</p>
+            </div>
+            <div class="center">
+                <h2>Center</h2>
+                <p>Conteúdo central</p>
+            </div>
+            <div class="right">
+                <h2>Right</h2>
+                <p>Conteúdo da direita</p>
+            </div>
         </div>
-    </div>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
 </body>
+
