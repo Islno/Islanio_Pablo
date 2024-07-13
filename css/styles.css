@@ -310,7 +310,7 @@ body {
            border: 1px solid #ddd;
            margin: 20px 0;
            padding: 20px;
-           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+           box-shadow: 0 2px 5px rgba(61, 88, 241, 0.1);
            display: flex;
            flex-wrap: wrap;
        }
@@ -322,7 +322,7 @@ body {
        }
        .header-atividade-10, .footer-atividade-10 {
            background: #333;
-           color: #fff;
+           color: #3383a8;
            padding: 10px;
            text-align: center;
        }
@@ -334,7 +334,7 @@ body {
        }
        .card-atividade-10 footer {
            background: none;
-           color: #666;
+           color: #74c6ec;
            text-align: right;
            padding: 0;
        }
