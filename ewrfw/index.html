@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script type="text/javascript">
+        function toggleInfo(button, infoType) {
+            const listItem = button.parentElement;
+            const info = listItem.querySelector('.info');
+
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.innerHTML = getInfo(listItem, infoType);
+                info.style.display = 'block';
+                button.textContent = 'Esconder Informações';
+            } else {
+                info.style.display = 'none';
+                button.textContent = 'Mostrar Informações';
+            }
+        }
+
+        function getInfo(listItem, infoType) {
+            const nome = listItem.textContent.trim().split('\n')[0];
+            let infoText = `<strong>Nome:</strong> ${nome}`;
+            if (infoType === 'altura') {
+                const altura = listItem.getAttribute('data-altura');
+                infoText += `<br><strong>Altura:</strong> ${altura}`;
+            } else if (infoType === 'completa') {
+                const altura = listItem.getAttribute('data-altura');
+                const idade = listItem.getAttribute('data-idade');
+                const cpf = listItem.getAttribute('data-cpf');
+                infoText += `<br><strong>Altura:</strong> ${altura}`;
+                infoText += `<br><strong>Idade:</strong> ${idade}`;
+                infoText += `<br><strong>CPF:</strong> ${cpf}`;
+            }
+            return infoText;
+        }
+    </script>
+</head>
+<body>
+    <h1>Pessoas</h1>
+    <ul>
+        <li class="pessoa" data-altura="1.75"><p>Yan</p>
+            <button onclick="toggleInfo(this, 'nome')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+        <li class="pessoa" data-altura="1.60"><p>Dante</p>
+            <button onclick="toggleInfo(this, 'nome')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+        <li class="pessoa" data-altura="1.82"><p>Endy</p>
+            <button onclick="toggleInfo(this, 'nome')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+    </ul>
+
+    <h1>Pessoas com Nome e Altura</h1>
+    <ul>
+        <li class="pessoa" data-altura="1.75"><p>Yan</p>
+            <button onclick="toggleInfo(this, 'altura')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+        <li class="pessoa" data-altura="1.60"><p>Dante</p>
+            <button onclick="toggleInfo(this, 'altura')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+        <li class="pessoa" data-altura="1.82"><p>Endy</p>
+            <button onclick="toggleInfo(this, 'altura')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+    </ul>
+
+    <h1>Pessoas com Informações Completas</h1>
+    <ul>
+        <li class="pessoa" data-altura="1.75" data-idade="25" data-cpf="123.456.789-00"><p>Yan</p>
+            <button onclick="toggleInfo(this, 'completa')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+        <li class="pessoa" data-altura="1.60" data-idade="30" data-cpf="987.654.321-00"><p>Dante</p>
+            <button onclick="toggleInfo(this, 'completa')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+        <li class="pessoa" data-altura="1.82" data-idade="28" data-cpf="456.123.789-00"><p>Endy</p>
+            <button onclick="toggleInfo(this, 'completa')">Mostrar Informações</button>
+            <p class="info" style="display:none;"></p>
+        </li>
+    </ul>
+</body>
+</html>
