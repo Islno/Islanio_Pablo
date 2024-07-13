@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade11</title>
     <script type="text/javascript">
-        function mostrarvalor(componente){
-            var valor= componente.getAttribute('data-idade');
-            alert(valor);
+        function mostrarNome(componente) {
+            var nome = componente.textContent;
+            alert(nome);
         }
-     </script>
+    </script>
 </head>
- <ul>
-        <li class="pessoa" data-idade="20" onclick="mostrarvalor(this)" >João</li>
-        <li class="pessoa" data-idade="25"  onclick="mostrarvalor(this)">Maria</li>
-        <li class="pessoa" data-idade="30"  onclick="mostrarvalor(this)">Pedro</li>
+<body>
+    <ul>
+        <li class="pessoa" data-idade="20" onclick="mostrarNome(this)">João</li>
+        <li class="pessoa" data-idade="25" onclick="mostrarNome(this)">Maria</li>
+        <li class="pessoa" data-idade="30" onclick="mostrarNome(this)">Pedro</li>
     </ul>
-<div class>
+</body>
 </html>
