@@ -13,7 +13,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.flor {
+.trevo{
     display: flex;
     flex-wrap: wrap;
     width: 300px;
@@ -24,7 +24,6 @@ body {
 .petala {
     width: 50%;
     height: 50%;
-    border: 2px solid #000;
     margin: 0;
     padding: 0;
     display: flex;
@@ -33,7 +32,7 @@ body {
 }
 
 .petala1 {
-    background-color: #FF6347;
+    background-color: #ffbb00;
     border-top-left-radius: 90%;
     border-bottom-left-radius: 300%;
     border-bottom-right-radius: 45%;
@@ -41,7 +40,7 @@ body {
 }
 
 .petala2 {
-    background-color: #FFD700;
+    background-color: #008cff;
     border-top-right-radius: 40%;
     border-top-left-radius: 230%;
     border-bottom-left-radius: 20%;
@@ -49,7 +48,7 @@ body {
 }
 
 .petala3 {
-    background-color: #90EE90;
+    background-color: #e5ff00;
     border-top-right-radius: 20%;
     border-top-left-radius: 230%;
     border-bottom-left-radius: 40%;
@@ -57,14 +56,14 @@ body {
 }
 
 .petala4 {
-    background-color: #87CEEB;
+    background-color: #c300ff;
     border-top-left-radius: 45%;
     border-bottom-left-radius: 300%;
     border-bottom-right-radius: 90%;
     border-top-right-radius: 330%;
 }
 
-.bolota {
+.circulo {
     display: flex;
     flex-wrap: wrap;
     width: 300px;
@@ -77,7 +76,6 @@ body {
 .bola {
     width: 50%;
     height: 50%;
-    border: 2px solid #000;
     margin: 0;
     padding: 0;
     display: flex;
@@ -86,17 +84,17 @@ body {
 }
 
 .bola1 {
-    background-color: #FF6347;
+    background-color: #35dd59;
 }
 
 .bola2 {
-    background-color: #FFD700;
+    background-color: #1ad4ac;
 }
 
 .bola3 {
-    background-color: #90EE90;
+    background-color: #1100ff;
 }
 
 .bola4 {
-    background-color: #87CEEB;
+    background-color: #ff00d4;
 }
