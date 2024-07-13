@@ -342,3 +342,83 @@ body {
            flex: 1;
        }
         /*_____________/
+        /*Atividade 11*/
+        .body-atividade-11 {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header-atividade-11 {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav-atividade-11 {
+            background: #444;
+            color: #fff;
+            padding: 10px;
+            width: 20%;
+        }
+        .nav-atividade-11 a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        .container-atividade-11 {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-content-atividade-11 {
+            width: 60%;
+        }
+        .sidebar-atividade-11 {
+            width: 20%;
+        }
+        .article-atividade-11 {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section-atividade-11 {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 4px solid #333;
+        }
+        .time-atividade-11 {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .banner-atividade-11 {
+            background: #f1f1f1;
+            padding: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #666;
+        }
+        .img-atividade-11 {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .author-atividade-11 {
+            font-weight: bold;
+        }
+        .footer-atividade-11 {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+    /* _______________ */
