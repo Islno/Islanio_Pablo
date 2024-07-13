@@ -351,13 +351,13 @@ body {
             background-color: #f4f4f4;
         }
         .header-atividade-11 {
-            background: #333;
+            background: #91c7f3;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
         .nav-atividade-11 {
-            background: #444;
+            background: #91c7f3;
             color: #fff;
             padding: 10px;
             width: 20%;
@@ -393,17 +393,17 @@ body {
             margin: 10px 0;
             padding: 10px;
             background: #f9f9f9;
-            border-left: 4px solid #333;
+            border-left: 4px solid #91c7f3;
         }
         .time-atividade-11 {
-            color: #666;
+            color: #5ca4df;
             font-size: 0.9em;
         }
         .banner-atividade-11 {
             background: #f1f1f1;
             padding: 10px;
             margin: 20px 0;
-            border-left: 4px solid #666;
+            border-left: 4px solid #5ca4df;
         }
         .img-atividade-11 {
             max-width: 100%;
@@ -415,7 +415,7 @@ body {
             font-weight: bold;
         }
         .footer-atividade-11 {
-            background: #333;
+            background: #91c7f3;
             color: #fff;
             text-align: center;
             padding: 10px;
