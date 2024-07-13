@@ -321,20 +321,20 @@ body {
            height: 150px;
        }
        .header-atividade-10, .footer-atividade-10 {
-           background: #366d88;
-           color: #0e222b;
+           background: #e7e8e9;
+           color: #1e1b1f;
            padding: 10px;
            text-align: center;
        }
        .card-atividade-10 header {
            background: none;
-           color: #446c83;
+           color: #1e1b1f;
            text-align: left;
            padding: 0;
        }
        .card-atividade-10 footer {
            background: none;
-           color: #74c6ec;
+           color: #1e1b1f;
            text-align: right;
            padding: 0;
        }
