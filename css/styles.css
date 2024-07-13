@@ -357,7 +357,7 @@ body {
             text-align: center;
         }
         .nav-atividade-11 {
-            background: #dad5d5;
+            background: #f1f1f1;
             color: #000000;
             padding: 10px;
             width: 20%;
@@ -404,6 +404,7 @@ body {
             padding: 10px;
             margin: 20px 0;
             border-left: 4px solid #5ca4df;
+            color: #000000;
         }
         .img-atividade-11 {
             max-width: 100%;
