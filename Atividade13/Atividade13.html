@@ -3,51 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 13</title>
+    <title>Forma de Gota</title>
     <style>
-        .circle {
-            width: 200px;
-            height: 200px;
-            background: linear-gradient(45deg, #ff6347 25%, #ffa500 25%, #ffa500 50%, #4682b4 50%, #4682b4 75%, #32cd32 75%, #32cd32);
-            border-radius: 50%;
+        .gota {
+            width: 100px;
+            height: 150px;
+            background: #00f;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
             position: relative;
-            overflow: hidden;
         }
         
-        .quarter {
-            width: 100%;
-            height: 100%;
+        .gota::before {
+            content: '';
             position: absolute;
-            transform-origin: 100% 100%;
-        }
-
-        .quarter:nth-child(1) {
-            background-color: #ff6347; /* Vermelho */
-            transform: rotate(0deg);
-        }
-
-        .quarter:nth-child(2) {
-            background-color: #ffa500; /* Laranja */
-            transform: rotate(90deg);
-        }
-
-        .quarter:nth-child(3) {
-            background-color: #4682b4; /* Azul */
-            transform: rotate(180deg);
-        }
-
-        .quarter:nth-child(4) {
-            background-color: #32cd32; /* Verde */
-            transform: rotate(270deg);
+            top: -50px;
+            left: 25px;
+            width: 50px;
+            height: 50px;
+            background: #00f;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
-    <div class="circle">
-        <div class="quarter"></div>
-        <div class="quarter"></div>
-        <div class="quarter"></div>
-        <div class="quarter"></div>
-    </div>
+    <div class="gota"></div>
 </body>
 </html>
