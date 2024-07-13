@@ -291,4 +291,47 @@ body {
             width: 100%;
         }
         /*__________*/
- 
+        .card-atividade-10 header {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            text-align: center;
+        }
+        
+        .card-atividade-10 header h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        
+        .card-atividade-10 header p {
+            margin: 5px 0 0;
+            font-size: 0.8em;
+        }
+        
+        .card-atividade-10 .imagem {
+            float: left;
+            max-width: 100px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        
+        .card-atividade-10 .texto {
+            overflow: hidden;
+        }
+        
+        .card-atividade-10 .texto p {
+            margin: 0;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        
+        .card-atividade-10 footer {
+            margin-top: 10px;
+            font-style: italic;
+            font-size: 0.8em;
+            text-align: right;
+        }
