@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade11</title>
+    <style>
+        .pessoa {
+            color: red; /* Cor padrão para todas as idades */
+        }
+        .pessoa[data-idade='30'] {
+            color: blue; /* Cor azul para idade igual a 30 */
+        }
+        .pessoa::before {
+            content: 'Idade: ' attr(data-idade) ', ';
+        }
+        .pessoa::after {
+            content: ', CPF: ' attr(data-cpf);
+        }
+    </style>
+    <script type="text/javascript">
+        function mostrarDados(componente) {
+            var idade = componente.getAttribute('data-idade');
+            var cpf = componente.getAttribute('data-cpf');
+            alert('Idade: ' + idade + ', CPF: ' + cpf);
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li class="pessoa" data-idade="20" data-cpf="123.456.789-00" onclick="mostrarDados(this)">João</li>
+        <li class="pessoa" data-idade="25" data-cpf="987.654.321-00" onclick="mostrarDados(this)">Maria</li>
+        <li class="pessoa" data-idade="30" data-cpf="456.789.123-00" onclick="mostrarDados(this)">Pedro</li>
+    </ul>
+</body>
+</html>
