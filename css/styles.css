@@ -355,6 +355,7 @@ body {
             color: #000000;
             padding: 10px;
             text-align: center;
+            border-color: #4b7394;
         }
         .nav-atividade-11 {
             background: #f1f1f1;
@@ -417,7 +418,7 @@ body {
             font-weight: bold;
         }
         .footer-atividade-11 {
-            background: #5f829e;
+            background: #f1f1f1;
             color: #1b1a1a;
             text-align: center;
             padding: 10px;
