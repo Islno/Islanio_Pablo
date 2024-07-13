@@ -360,14 +360,13 @@ body {
             background: #f1f1f1;
             color: #000000;
             padding: 10px;
-            width: 20%;   
+            width: 20%;
         }
         .nav-atividade-11 a {
             color: #000000;
             text-decoration: none;
             display: block;
             margin: 10px 0;
-            background-color: #f1f1f1;
         }
         .container-atividade-11 {
             width: 80%;
@@ -377,7 +376,6 @@ body {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
-            background-color: #f1f1f1;
         }
         .main-content-atividade-11 {
             width: 60%;
@@ -390,8 +388,7 @@ body {
             margin: 20px 0;
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            color: #000;
-            background-color: #f1f1f1;
+            color: #000000;
         }
         .section-atividade-11 {
             margin: 10px 0;
@@ -402,7 +399,6 @@ body {
         .time-atividade-11 {
             color: #000000;
             font-size: 0.9em;
-            background-color: #f1f1f1;
         }
         .banner-atividade-11 {
             background: #f1f1f1;
