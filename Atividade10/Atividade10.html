@@ -3,115 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Postagens</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        article {
-            border: 1px solid #ddd;
-            margin: 20px 0;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        section {
-            margin: 10px 0;
-            padding: 10px;
-            background: #f9f9f9;
-            border-left: 4px solid #333;
-        }
-        time {
-            color: #666;
-            font-size: 0.9em;
-        }
-        aside {
-            background: #f1f1f1;
-            padding: 10px;
-            margin: 10px 0;
-            border-left: 4px solid #666;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 10px;
-        }
-        .author {
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
+    <title>Atividade 10</title>
+    <link rel="stylesheet" href="../css/styles.css">
 
-<header>
-    <h1>Exemplo de Postagens</h1>
+<body class="body-atividade-10">
+<header class="header-atividade-10">
+    <h1>Portal de Notícias</h1>
 </header>
 
-<div class="container">
+<div class="container-atividade-10">
 
-    <article>
-        <header>
-            <h2>Postagem Exemplo 1</h2>
-            <p class="author">Autor: João Silva</p>
-            <time datetime="2024-07-12">Publicado em: 12 de Julho de 2024</time>
-        </header>
-        <section>
-            <img src="https://via.placeholder.com/600x300" alt="Imagem da Postagem 1">
+    <article class="card-atividade-10">
+        <img src="data:image/jpeg;base64,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" alt="Imagem Notícia 1">
+        <div class="content-atividade-10">
+            <header>
+                <h2>Skin de jogo online custa mais de um salario minimo</h2>
+            </header>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </section>
-        <aside>
-            <p>Nota: Esta é uma informação adicional sobre a postagem.</p>
-        </aside>
+            <footer>Publicado em: 12/07/2024</footer>
+        </div>
     </article>
 
-    <article>
-        <header>
-            <h2>Postagem Exemplo 2</h2>
-            <p class="author">Autor: Maria Souza</p>
-            <time datetime="2024-07-11">Publicado em: 11 de Julho de 2024</time>
-        </header>
-        <section>
-            <img src="https://via.placeholder.com/600x300" alt="Imagem da Postagem 2">
+    <article class="card-atividade-10">
+        <img src="https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/2386/a6ab6046dca46b12460064bd11cdb4b3.jpg" alt="Imagem Notícia 2">
+        <div class="content-atividade-10">
+            <header>
+                <h2>Shrek 5 tem data de postagem</h2>
+            </header>
             <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-        </section>
-        <aside>
-            <p>Nota: Informações adicionais sobre a postagem podem ser inseridas aqui.</p>
-        </aside>
+            <footer>Publicado em: 11/07/2024</footer>
+        </div>
     </article>
 
-    <article>
-        <header>
-            <h2>Postagem Exemplo 3</h2>
-            <p class="author">Autor: Carlos Pereira</p>
-            <time datetime="2024-07-10">Publicado em: 10 de Julho de 2024</time>
-        </header>
-        <section>
-            <img src="https://via.placeholder.com/600x300" alt="Imagem da Postagem 3">
+    <article class="card-atividade-10">
+        <img src="https://noticias.maisesports.com.br/wp-content/uploads/2024/05/loud-less-valorant.jpg" alt="Imagem Notícia 3">
+        <div class="content-atividade-10">
+            <header>
+                <h2>Loud é eliminada do VCT americas</h2>
+            </header>
             <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-        </section>
-        <aside>
-            <p>Nota: Esta seção pode conter links e outras informações relevantes.</p>
-        </aside>
+            <footer>Publicado em: 10/07/2024</footer>
+        </div>
+    </article>
+
+    <article class="card-atividade-10">
+        <img src="https://via.placeholder.com/150" alt="Imagem Notícia 4">
+        <div class="content-atividade-10">
+            <header>
+                <h2>Brasil foi eliminado da Copa America</h2>
+            </header>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <footer>Publicado em: 09/07/2024</footer>
+        </div>
     </article>
 
 </div>
+
+<footer class="footer-atividade-10">
+    <p>&copy; 2024 Portal de Notícias. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
