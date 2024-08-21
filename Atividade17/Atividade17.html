@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -23,53 +22,68 @@
             font-size: 36px;
             font-weight: bold;
         }
+        .right-column img {
+            max-height: 500px; 
+            object-fit: cover; 
+        }
+        .img-container {
+            overflow: hidden; 
+        }
+        .img-wrapper {
+            max-height: 500px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     </style>
 
     <title>Mosaico de Imagens</title>
 </head>
 <body>
     <div class="container mt-5">
-        <!-- Título -->
+   
         <div class="title-text">Mosaico de Imagens</div>
 
         <div class="row">
-            <!-- Imagem Grande (5x5) -->
-            <div class="col-12 col-md-5 img-container">
-                <img src="https://via.placeholder.com/500x500" alt="Imagem Grande" class="img-fluid">
+           
+            <div class="col-12 col-md-6 img-container">
+                <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg" alt="Imagem Grande" class="img-fluid">
             </div>
-            <!-- Imagem ao Lado (5x3) -->
-            <div class="col-12 col-md-5 img-container">
-                <img src="https://via.placeholder.com/500x300" alt="Imagem Lateral" class="img-fluid">
-            </div>
-        </div>
 
-        <div class="row mt-4">
-            <!-- Imagens Abaixo da Imagem Lateral -->
-            <div class="col-12 col-md-2 img-container">
-                <img src="https://via.placeholder.com/200x300" alt="Imagem Pequena 1" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-2 img-container">
-                <img src="https://via.placeholder.com/200x300" alt="Imagem Pequena 2" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-4 img-container">
-                <img src="https://via.placeholder.com/400x300" alt="Imagem Média" class="img-fluid">
-            </div>
-        </div>
-        <div class="row mt-4">
-            <!-- Imagens Inferiores -->
-            <div class="col-12 col-md-2 img-container">
-                <img src="https://via.placeholder.com/200x200" alt="Imagem Inferior 1" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-2 img-container">
-                <img src="https://via.placeholder.com/200x200" alt="Imagem Inferior 2" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-4 img-container">
-                <img src="https://via.placeholder.com/400x200" alt="Imagem Inferior 3" class="img-fluid">
+          
+            <div class="col-12 col-md-6">
+                <div class="img-wrapper">
+                    <div class="img-container">
+                        <img src="https://via.placeholder.com/500x300" alt="Imagem Lateral" class="img-fluid">
+                    </div>
+
+                 
+                    <div class="row mt-4">
+                    
+                        <div class="col-6 img-container">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvQ4EUrpd9zUSNwIpB8u3-G0XTFsO87TGOUA&s" alt="Imagem Pequena 1" class="img-fluid">
+                        </div>
+                        <div class="col-6 img-container">
+                            <img src="https://www.patasdacasa.com.br/sites/default/files/styles/article_detail_1200/public/noticias/2023/04/alerta-essas-fotos-de-filhotes-vao-te-fazer-querer-adotar-um-gato-hoje-mesmo.jpg.webp?itok=7TfqH7ey" alt="Imagem Pequena 2" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                     
+                        <div class="col-4 img-container">
+                            <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/01-cat-groom-nationalgeographic-1031934.jpg?w=1600" alt="Imagem Inferior 1" class="img-fluid">
+                        </div>
+                        <div class="col-4 img-container">
+                            <img src="https://www.organnact.com.br/wp-content/uploads/2021/09/doencas-mais-comuns-em-gatos-no-inverno.jpg" alt="Imagem Inferior 2" class="img-fluid">
+                        </div>
+                        <div class="col-4 img-container">
+                            <img src="https://purina.com.br/sites/default/files/styles/webp/public/2022-12/purina-felix-gatos-espertos-como-estimular-o-felino-com-a-alimentacao.jpg.webp?itok=WFs0e09_" alt="Imagem Inferior 3" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JavaScript and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
