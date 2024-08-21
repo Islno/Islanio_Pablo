@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animação CSS</title>
+    <title>Animação Atividade 15</title>
     <style>
+     
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
         .box {
-            width: 100px;
-            height: 100px;
+            width: 200px; 
+            height: 200px; 
             background-color: red;
             animation: rotateAndColorChange 40s steps(4) infinite;
-            /* 40s para completar um ciclo completo de 360° */
         }
 
         @keyframes rotateAndColorChange {
