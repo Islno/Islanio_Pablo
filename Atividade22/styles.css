@@ -1,70 +1,108 @@
+/* Estilo da página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e; /* Cor de fundo mais suave */
+    background-color: #282c34; /* Fundo escuro */
+    color: #f0f0f0; /* Texto mais claro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #61dafb; /* Azul claro */
+    text-align: center;
+    padding: 20px;
+    color: #282c34;
+    border-radius: 0 0 12px 12px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .container {
-    max-width: 800px;
-    margin: 30px auto; /* Aumentei a margem para dar mais espaço */
-    padding: 0 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1c1f26; /* Fundo mais escuro para contraste */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra suave */
 }
 
-ul {
+.activity-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-li {
-    background-color: #f4f4f9; /* Tom mais claro para o fundo dos itens */
-    padding: 12px;
-    margin-bottom: 15px; /* Espaço ligeiramente maior entre os itens */
-    border-radius: 10px; /* Bordas mais arredondadas */
-    box-shadow: 0px 4px 12px rgba(0, 150, 255, 0.3); /* Sombra suavizada */
+.activity-list li {
+    background-color: #444; /* Fundo dos itens */
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-footer {
-    background-color: #444; /* Fundo do rodapé mais claro */
-    color: #e0e0e0; /* Texto do rodapé mais suave */
-    padding: 25px; /* Aumentei o preenchimento */
+.activity-list li:hover {
+    background-color: #61dafb; /* Cor ao passar o mouse */
+}
+
+.activity-list li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.activity-list li:hover a {
+    color: #282c34; /* Cor do texto ao passar o mouse */
+}
+
+.footer {
+    background-color: #444;
+    padding: 20px;
     text-align: center;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto;
 }
 
 .back-button {
-    background-color: #444; /* Tom mais suave para o botão */
-    color: #f4f4f9;
+    background-color: #61dafb;
+    color: #282c34;
     border: none;
-    padding: 12px 24px; /* Botão ligeiramente maior */
-    font-size: 18px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-    background-color: #666; /* Alteração da cor ao passar o mouse */
+    background-color: #21a1f1;
 }
 
-h1 {
-    color: #f0f0f0; /* Texto mais claro no título */
-    font-size: 2.4rem; /* Título um pouco maior */
-    font-weight: 600;
-}
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
 
-.btn {
-    width: 100%;
-    font-size: 1.3rem; /* Botão maior e mais espaçoso */
-    padding: 12px;
-    background-color: #0056b3; /* Azul mais escuro */
-    color: white;
-    border-radius: 6px;
-}
+    .activity-list li {
+        padding: 10px;
+    }
 
-#resultado {
-    font-size: 2.2rem;
-    color: #33a0ff; /* Tom de azul mais suave */
-    margin-top: 24px;
-    font-weight: 600; /* Negrito mais forte */
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .back-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }
