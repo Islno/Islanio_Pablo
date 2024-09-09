@@ -1,0 +1,79 @@
+/* Geral */
+body {
+    background-color: #f4f4f9; /* Cinza muito claro */
+    color: #333; /* Texto em cinza escuro */
+    padding: 20px;
+    font-size: 16px; /* Tamanho de fonte padrão */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+}
+
+/* Container */
+.container {
+    max-width: 600px; /* Largura máxima reduzida para foco no conteúdo */
+    margin: 0 auto;
+}
+
+/* Card */
+.card {
+    background-color: #ffffff; /* Branco para o fundo do card */
+    color: #333; /* Texto em cinza escuro */
+    padding: 30px; /* Aumenta o padding */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra mais suave e maior */
+    border: 1px solid #e1e1e1; /* Borda leve para o card */
+}
+
+/* Labels do formulário */
+.form-label {
+    font-weight: bold;
+    color: #333; /* Texto em cinza escuro */
+    font-size: 16px; /* Tamanho da fonte das labels */
+}
+
+/* Campos do formulário */
+.form-control {
+    background-color: #ffffff; /* Fundo branco para o campo */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte dos campos */
+    padding: 12px; /* Padding interno dos campos */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+.form-control:focus {
+    border-color: #0056b3; /* Azul para o foco */
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25); /* Sombra azul clara ao focar */
+}
+
+/* Botão personalizado */
+.btn-custom {
+    background-color: #007bff; /* Azul brilhante */
+    color: white;
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    padding: 12px 20px; /* Padding do botão */
+    border: none; /* Remove a borda padrão */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para o hover */
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Azul mais escuro para o hover */
+    transform: translateY(-2px); /* Efeito de elevação no hover */
+}
+
+/* Ícones */
+.icon {
+    margin-right: 12px; /* Margem direita dos ícones */
+    font-size: 18px; /* Tamanho dos ícones ajustado */
+}
+
+/* Alerta de erro */
+.alert {
+    display: none;
+    background-color: #f8d7da; /* Fundo vermelho claro para o alerta */
+    color: #721c24; /* Texto vermelho escuro */
+    border: 1px solid #f5c6cb; /* Borda vermelha clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Padding do alerta */
+    font-size: 16px; /* Tamanho da fonte do alerta */
+}
