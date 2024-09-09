@@ -1,3 +1,4 @@
+/* Reset e normalização de estilos básicos */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,7 +17,7 @@ ul {
     padding: 0;
 }
 
-li {
+.list-item {
     background-color: #e0f7fa; /* Azul claro para o fundo dos itens */
     color: #00796b; /* Azul escuro para o texto */
     padding: 15px; /* Padding aumentado para melhor visualização */
@@ -26,7 +27,18 @@ li {
     transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para efeitos de hover */
 }
 
-li:hover {
+.list-item:hover {
     background-color: #b2ebf2; /* Azul mais escuro ao passar o mouse */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Estilo para os links dentro dos itens da lista */
+.list-item a {
+    color: #004d40; /* Cor do link, um tom de verde escuro para contraste */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Torna o link em negrito */
+}
+
+.list-item a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
 }
