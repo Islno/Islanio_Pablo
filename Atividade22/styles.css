@@ -106,3 +106,30 @@ a:hover {
         padding: 8px 16px;
     }
 }
+/* Estilo para os itens da lista como botões */
+.btn-list-item {
+    display: inline-block;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 15px 30px; /* Aumenta o tamanho do botão */
+    margin-bottom: 15px; /* Espaço entre os botões */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para o hover */
+}
+
+/* Estilo para os itens da lista quando o mouse passa por cima */
+.btn-list-item:hover {
+    background-color: #333; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Remove a decoração dos links dentro dos botões */
+.btn-list-item a {
+    color: inherit; /* Herda a cor do botão */
+    text-decoration: none; /* Remove o sublinhado */
+}
