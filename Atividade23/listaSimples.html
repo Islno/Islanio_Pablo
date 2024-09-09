@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manipulação de Frutas</title>
+
+    <script type="text/javascript">
+        var frutas = ['maçã', 'banana', 'laranja', 'melancia', 'manga'];
+
+        function criaListaFrutas() {
+            const containerFrutas = document.getElementById('containerFrutas');
+            containerFrutas.innerHTML = '';  // Limpa o conteúdo anterior
+            frutas.forEach(function(item, index) {
+                containerFrutas.innerHTML += (index) + ' - ' + item + '<br>';
+            });
+        }
+
+        function posicaoFrutas() {
+            var indice = prompt('Qual posição da lista deseja consultar?');
+            if (indice >= 0 && indice < frutas.length) {
+                alert('Fruta na posição ' + indice + ': ' + frutas[indice]);
+            } else {
+                alert('Posição inválida!');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="containerFrutas"></div>
+
+    <button onclick="criaListaFrutas()">Criar Array de Frutas</button> <br><br>
+    <button onclick="posicaoFrutas()">Posição no Array de Frutas</button>
+</body>
+</html>
