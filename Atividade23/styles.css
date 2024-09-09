@@ -1,25 +1,35 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
+/* Reset básico */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
 li {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px rgb(34 204 255)
+    margin-bottom: 15px; /* Espaço entre os itens */
+}
+
+/* Estilo para os itens da lista como botões */
+.btn-list-item {
+    display: block; /* Ocupa toda a largura disponível */
+    background-color: #f4f4f9; /* Fundo claro para os botões */
+    color: #333; /* Texto escuro */
+    padding: 15px 20px; /* Espaçamento interno dos botões */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    font-size: 1.2rem; /* Tamanho da fonte ajustado */
+    text-align: center; /* Centraliza o texto */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para o hover */
+    text-decoration: none; /* Remove a decoração do link */
+}
+
+/* Estilo para os itens da lista quando o mouse passa por cima */
+.btn-list-item:hover {
+    background-color: #e0e0e0; /* Fundo mais escuro ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Remove a decoração dos links dentro dos botões */
+.btn-list-item a {
+    color: #333; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado */
 }
