@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #1e1e1e; /* Cor de fundo mais suave */
 }
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 30px auto; /* Aumentei a margem para dar mais espaço */
     padding: 0 20px;
 }
 
@@ -17,49 +17,54 @@ ul {
 }
 
 li {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px rgb(34 204 255)
+    background-color: #f4f4f9; /* Tom mais claro para o fundo dos itens */
+    padding: 12px;
+    margin-bottom: 15px; /* Espaço ligeiramente maior entre os itens */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0px 4px 12px rgba(0, 150, 255, 0.3); /* Sombra suavizada */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #444; /* Fundo do rodapé mais claro */
+    color: #e0e0e0; /* Texto do rodapé mais suave */
+    padding: 25px; /* Aumentei o preenchimento */
     text-align: center;
     bottom: 0;
     width: 100%;
 }
 
 .back-button {
-    background-color: #333;
-    color: #fff;
+    background-color: #444; /* Tom mais suave para o botão */
+    color: #f4f4f9;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+    padding: 12px 24px; /* Botão ligeiramente maior */
+    font-size: 18px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 .back-button:hover {
-    background-color: #555;
+    background-color: #666; /* Alteração da cor ao passar o mouse */
 }
 
 h1 {
-    color: #343a40;
+    color: #f0f0f0; /* Texto mais claro no título */
+    font-size: 2.4rem; /* Título um pouco maior */
+    font-weight: 600;
 }
 
 .btn {
     width: 100%;
-    font-size: 1.2rem;
-    padding: 10px;
+    font-size: 1.3rem; /* Botão maior e mais espaçoso */
+    padding: 12px;
+    background-color: #0056b3; /* Azul mais escuro */
+    color: white;
+    border-radius: 6px;
 }
 
 #resultado {
-    font-size: 2rem;
-    color: #007bff;
-    margin-top: 20px;
-    font-weight: bold;
+    font-size: 2.2rem;
+    color: #33a0ff; /* Tom de azul mais suave */
+    margin-top: 24px;
+    font-weight: 600; /* Negrito mais forte */
 }
