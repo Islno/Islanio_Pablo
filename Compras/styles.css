@@ -1,36 +1,151 @@
-.body {
-  padding-top: 20px;
+/* Reset básico para eliminar diferenças entre navegadores */
+html, body, h1, h2, h3, p, ul, li, a, table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-.modal-content {
-  background-color: #f7f7f7;
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
 }
 
-.navbar-nav .nav-link {
-  margin: 5px;
+.navbar {
+  margin-bottom: 20px;
 }
 
-.table-hover tbody tr:hover {
-  background-color: #f1f1f1;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.pagination {
-  justify-content: center;
+.nav-link {
+  color: #fff;
+  font-size: 1rem;
 }
 
-.popover {
-  max-width: 300px;
+.nav-link:hover {
+  color: #ffc107;
 }
 
-.btn-outline-primary {
-    color: #000000;
-    border-color: #007bff;
+.table {
+  margin-top: 20px;
 }
 
-.popover-body {
+.table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.table td, .table th {
   text-align: center;
 }
 
-.btn-popover {
-  margin: 5px 0;
+.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.badge-success {
+  background-color: #28a745;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.modal-footer {
+  border-top: 1px solid #007bff;
+}
+
+.modal-content {
+  border-radius: 0.5rem;
+}
+
+.pagination .page-link {
+  color: #007bff;
+}
+
+.pagination .page-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Customização de tooltip */
+.tooltip-inner {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* Estilos adicionais para o formulário de pesquisa e adição de produtos */
+.form-control {
+  border-radius: 0.25rem;
+}
+
+.form-group label {
+  font-weight: bold;
 }

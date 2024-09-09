@@ -13,30 +13,30 @@
 
 <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-        <a class="navbar-brand" href="#">Sistema de Pedidos</a><i class="bi bi-basket2-fill"></i>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center">
+        <a class="navbar-brand" href="#">Gestão de Produtos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary" href="#"><i class="fas fa-clipboard-list"></i> Pedidos Recentes</a>
+                    <a class="nav-link btn btn-outline-light" href="#"><i class="fas fa-box"></i> Pedidos Recentes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary" href="#"><i class="fas fa-paper-plane"></i> Enviar Cliente</a>
+                    <a class="nav-link btn btn-outline-light" href="#"><i class="fas fa-user-plus"></i> Adicionar Cliente</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary" href="#"><i class="fas fa-credit-card"></i> Receber Pagamento</a>
+                    <a class="nav-link btn btn-outline-light" href="#"><i class="fas fa-credit-card"></i> Receber Pagamento</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary" href="#"><i class="fas fa-box"></i> Todos os Pedidos</a>
+                    <a class="nav-link btn btn-outline-light" href="#"><i class="fas fa-list"></i> Todos os Pedidos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary" href="#"><i class="fas fa-plus"></i> Novo Pedido</a>
+                    <a class="nav-link btn btn-outline-light" href="#"><i class="fas fa-plus-circle"></i> Novo Pedido</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary" href="#"><i class="fas fa-home"></i> Página Principal</a>
+                    <a class="nav-link btn btn-outline-light" href="#"><i class="fas fa-home"></i> Página Principal</a>
                 </li>
             </ul>
         </div>
@@ -46,133 +46,45 @@
         <!-- Formulário de pesquisa -->
         <div class="form-group">
             <label for="descricao">Pesquisa de Produtos</label>
-            <input type="text" class="form-control" id="descricao" placeholder="Descrição">
+            <input type="text" class="form-control" id="descricao" placeholder="Digite a descrição do produto">
         </div>
 
         <!-- Botões de ação -->
         <div class="mb-3">
             <button type="button" class="btn btn-primary" id="pesquisarBtn" data-toggle="modal" data-target="#pesquisarModal"><i class="fas fa-search"></i> Pesquisar</button>
             <button type="button" class="btn btn-secondary" id="recarregarBtn"><i class="fas fa-sync-alt"></i> Recarregar</button>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addProdutoModal"><i class="fas fa-plus"></i> Novo</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addProdutoModal"><i class="fas fa-plus"></i> Novo Produto</button>
         </div>
 
         <!-- Tabela de produtos -->
-        <table class="table table-striped table-condensed table-bordered">
+        <table class="table table-striped table-hover table-bordered">
             <thead>
                 <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Descrição</th>
-                    <th scope="col">Situação</th>
+                    <th scope="col">Código</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
+                <!-- Exemplo de produtos -->
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Pizza</td>
-                    <td><span class="badge badge-success">Ativo</span></td>
+                    <th scope="row">001</th>
+                    <td>Pizza Margherita</td>
+                    <td><span class="badge badge-success">Disponível</span></td>
                     <td>
                         <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
                         <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
                         <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Coca-Cola</td>
-                    <td><span class="badge badge-success">Ativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Hambúrguer</td>
-                    <td><span class="badge badge-success">Ativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Cajuína</td>
-                    <td><span class="badge badge-success">Ativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Torta de Maçã</td>
-                    <td><span class="badge badge-success">Ativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <td>Vinho Tinto</td>
-                    <td><span class="badge badge-secondary">Inativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">7</th>
-                    <td>Dollynho, O Seu Amiguinho</td>
-                    <td><span class="badge badge-success">Ativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">8</th>
-                    <td>Doce de Leite</td>
-                    <td><span class="badge badge-success">Ativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">9</th>
-                    <td>Brigadeiro</td>
-                    <td><span class="badge badge-secondary">Inativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">10</th>
-                    <td>Guaraná Jesus</td>
-                    <td><span class="badge badge-success">Ativo</span></td>
-                    <td>
-                        <button class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Visualizar"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm btn-excluir" data-toggle="modal" data-target="#confirmExclusaoModal" title="Excluir"><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
+                <!-- Repetir para mais produtos -->
             </tbody>
         </table>
 
-        <!-- Pagination -->
+        <!-- Paginação -->
         <nav aria-label="Page navigation">
-            <ul class="pagination">
+            <ul class="pagination justify-content-center">
                 <li class="page-item"><a class="page-link" href="index.html">1</a></li>
                 <li class="page-item"><a class="page-link" href="pg2.html">2</a></li>
                 <li class="page-item"><a class="page-link" href="pg3.html">3</a></li>
@@ -195,9 +107,9 @@
                         <div class="form-group">
                             <label for="tipoPesquisa">Tipo de Pesquisa</label>
                             <select class="form-control" id="tipoPesquisa">
-                                <option value="id">ID</option>
-                                <option value="descricao">Descrição</option>
-                                <option value="situacao">Situação</option>
+                                <option value="id">Código</option>
+                                <option value="descricao">Nome</option>
+                                <option value="situacao">Status</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -216,7 +128,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addProdutoModalLabel">Adicionar Produto</h5>
+                    <h5 class="modal-title" id="addProdutoModalLabel">Adicionar Novo Produto</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -258,48 +170,10 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="confirmExclusaoModalLabel">Confirmação de Exclusão</h5>
+                    <h5 class="modal-title" id="confirmExclusaoModalLabel">Confirmar Exclusão</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <p>Deseja excluir este item?</p>
-                    <div>
-                        <button type="button" class="btn btn-success" id="confirmarExclusaoBtn">Sim</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript do Bootstrap e FontAwesome -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-
-            // Botão de recarregar página
-            $('#recarregarBtn').click(function () {
-                location.reload();
-            });
-
-            // Botão de exclusão com modal
-            var itemParaExcluir;
-            $('.btn-excluir').click(function () {
-                itemParaExcluir = $(this).closest('tr'); // Guarda a linha da tabela para exclusão
-            });
-
-            $('#confirmarExclusaoBtn').click(function () {
-                itemParaExcluir.remove(); // Remove a linha da tabela
-                $('#confirmExclusaoModal').modal('hide'); // Fecha o modal
-                alert('Item excluído com sucesso!');
-            });
-        });
-    </script>
-</body>
-
-</html>
+                    <p>Tem certeza que deseja excluir
