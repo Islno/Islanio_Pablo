@@ -8,15 +8,22 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-  <style>
-    #numberContainer {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f8f9fa;
-    min-height: 50px;
-}
-  </style>
+    <style>
+        #numberContainer {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            min-height: 50px;
+        }
+
+        /* Nova classe para estilizar os números */
+        .number {
+            color: #000; /* Cor preta para os números */
+            font-size: 1.2rem; /* Tamanho da fonte dos números */
+            margin: 5px 0; /* Margem superior e inferior para espaçamento */
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
@@ -32,26 +39,26 @@
     <!-- Custom JS -->
     <script>
       document.getElementById('generateBtn').addEventListener('click', function() {
-    // Limpa a div antes de adicionar novos números
-    const container = document.getElementById('numberContainer');
-    container.innerHTML = '';
+        // Limpa a div antes de adicionar novos números
+        const container = document.getElementById('numberContainer');
+        container.innerHTML = '';
 
-    // Lê o valor de n através do prompt
-    const n = parseInt(prompt('Digite um número (n):'), 10);
+        // Lê o valor de n através do prompt
+        const n = parseInt(prompt('Digite um número (n):'), 10);
 
-    // Verifica se o valor é um número válido
-    if (!isNaN(n) && n > 0) {
-        // Cria e adiciona os números à div
-        for (let i = 1; i <= n; i++) {
-            const numberElement = document.createElement('div');
-            numberElement.textContent = i;
-            container.appendChild(numberElement);
+        // Verifica se o valor é um número válido
+        if (!isNaN(n) && n > 0) {
+            // Cria e adiciona os números à div
+            for (let i = 1; i <= n; i++) {
+                const numberElement = document.createElement('div');
+                numberElement.textContent = i;
+                numberElement.classList.add('number'); // Adiciona a classe 'number'
+                container.appendChild(numberElement);
+            }
+        } else {
+            alert('Por favor, digite um número válido.');
         }
-    } else {
-        alert('Por favor, digite um número válido.');
-    }
-});
+    });
     </script>
 </body>
 </html>
-
