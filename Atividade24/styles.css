@@ -18,23 +18,23 @@ ul {
 }
 
 .list-item {
-    background-color: #e0f7fa; /* Azul claro para o fundo dos itens */
-    color: #00796b; /* Azul escuro para o texto */
+    background-color: #ffffff; /* Fundo branco para os itens */
+    color: #333333; /* Texto escuro para contraste */
     padding: 15px; /* Padding aumentado para melhor visualização */
     margin-bottom: 20px; /* Espaço maior entre os itens */
-    border-radius: 10px; /* Bordas arredondadas mais pronunciadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para efeitos de hover */
 }
 
 .list-item:hover {
-    background-color: #b2ebf2; /* Azul mais escuro ao passar o mouse */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+    background-color: #f0f0f0; /* Fundo cinza claro ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
 }
 
 /* Estilo para os links dentro dos itens da lista */
 .list-item a {
-    color: #004d40; /* Cor do link, um tom de verde escuro para contraste */
+    color: #007bff; /* Azul para o link */
     text-decoration: none; /* Remove o sublinhado dos links */
     font-weight: bold; /* Torna o link em negrito */
 }
